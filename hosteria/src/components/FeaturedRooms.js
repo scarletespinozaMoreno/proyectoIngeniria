@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Title from "./Title";
 import { RoomContext } from "../context";
-import Rooms from "./Rooms";
+import Rooms from "./Room";
 import Loading from "./Loading";
 export default class FeaturedRooms extends Component {
   static contextType = RoomContext;
@@ -14,7 +14,7 @@ export default class FeaturedRooms extends Component {
     });
     return (
       <section className="featured-rooms">
-        <Title title="featured rooms" />
+        <Title title="Habitaciones destacadas" />
         <div className="featured-rooms-center">
           {loading ? <Loading /> : rooms}
         </div>
