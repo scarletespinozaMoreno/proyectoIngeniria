@@ -42,11 +42,11 @@ const RoomsFilter = ({ rooms }) => {
   ));
   return (
     <section className="filter-container">
-      <Title title="search rooms" />
+      <Title title="Buscar habitación" />
       <form className="filter-form">
         {/* select type */}
         <div className="form-group">
-          <label htmlFor="type">room type</label>
+          <label htmlFor="type">Tipo </label>
           <select
             name="type"
             id="type"
@@ -60,7 +60,7 @@ const RoomsFilter = ({ rooms }) => {
         {/* end of select type */}
         {/* guests  */}
         <div className="form-group">
-          <label htmlFor="capacity">Guests</label>
+          <label htmlFor="capacity">Personas</label>
           <select
             name="capacity"
             id="capacity"
@@ -74,7 +74,7 @@ const RoomsFilter = ({ rooms }) => {
         {/* end of guests */}
         {/* room price */}
         <div className="form-group">
-          <label htmlFor="price">room price ${price}</label>
+          <label htmlFor="price">Precio ${price}</label>
           <input
             type="range"
             name="price"
@@ -89,7 +89,7 @@ const RoomsFilter = ({ rooms }) => {
         {/* end of room price*/}
         {/* size */}
         <div className="form-group">
-          <label htmlFor="price">room size </label>
+          <label htmlFor="price">Tamaño </label>
           <div className="size-inputs">
             <input
               type="number"
@@ -118,7 +118,7 @@ const RoomsFilter = ({ rooms }) => {
               checked={breakfast}
               onChange={handleChange}
             />
-            <label htmlFor="breakfast">breakfast</label>
+            <label htmlFor="breakfast">Desayuno</label>
           </div>
           <div className="single-extra">
             <input
@@ -127,7 +127,7 @@ const RoomsFilter = ({ rooms }) => {
               checked={pets}
               onChange={handleChange}
             />
-            <label htmlFor="breakfast">pets</label>
+            <label htmlFor="breakfast">Mascotas</label>
           </div>
         </div>
         {/* end of extras type */}

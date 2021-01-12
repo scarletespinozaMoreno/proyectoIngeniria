@@ -12,10 +12,10 @@ const Room = memo(({ room }) => {
         <img src={images[0] || defaultImg} alt="single room" />
         <div className="price-top">
           <h6>${price}</h6>
-          <p>per night</p>
+          <p>por noche</p>
         </div>
         <Link to={`/rooms/${slug}`} className="btn-primary room-link">
-          features
+          Destacada
         </Link>
       </div>
       <p className="room-info">{name}</p>

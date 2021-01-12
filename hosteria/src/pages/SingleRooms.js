@@ -27,9 +27,9 @@ export default class SingleRoom extends Component {
     if (!room) {
       return (
         <div className="error">
-          <h3> no such room could be found...</h3>
+          <h3> No hay habitación disponible...</h3>
           <Link to="/rooms" className="btn-primary">
-            back to rooms
+            volver habitaciones
           </Link>
         </div>
       );
@@ -53,7 +53,7 @@ export default class SingleRoom extends Component {
         <StyledHero img={images[0] || this.state.defaultBcg}>
           <Banner title={`${name} room`}>
             <Link to="/rooms" className="btn-primary">
-              back to rooms
+              Volver habitaciones
             </Link>
           </Banner>
         </StyledHero>
@@ -65,19 +65,19 @@ export default class SingleRoom extends Component {
           </div>
           <div className="single-room-info">
             <article className="desc">
-              <h3>details</h3>
+              <h3>Detalles</h3>
               <p>{description}</p>
             </article>
-            <article className="info">
-              <h3>info</h3>
-              <h6>price : ${price}</h6>
-              <h6>size : {size} SQFT</h6>
+            <article className="información">
+              <h3>información</h3>
+              <h6>precio : ${price}</h6>
+              <h6>tamaño : {size} SQFT</h6>
               <h6>
-                max capacity :
+                 capacidad máxima :
                 {capacity > 1 ? `${capacity} people` : `${capacity} person`}
               </h6>
-              <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
-              <h6>{breakfast && "free breakfast included"}</h6>
+              <h6>{pets ? "Permitido mascotas" : "No permitido mascotas"}</h6>
+              <h6>{breakfast && "Desayuno gratis incluído"}</h6>
             </article>
           </div>
         </section>
