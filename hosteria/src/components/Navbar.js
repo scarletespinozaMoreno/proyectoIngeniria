@@ -32,10 +32,7 @@ export default class Navbar extends Component {
               <Link to="/">Inicio</Link>
             </li>
             <li>
-              <Link to="/quienesSomos">Nuestra Hosteria</Link>
-            </li>
-            <li>
-              <Link to="/rooms">Habitaciones</Link>
+              <Link to="/rooms">Habitaciones y suites</Link>
             </li>
             <li>
               <Link to="/servicios">Servicios</Link>
@@ -44,7 +41,7 @@ export default class Navbar extends Component {
               <Link to="/Ofertas">Ofertas</Link>
             </li>
             <li>
-              <Link to="/Contactenos">Contáctenos</Link>
+              <Link to="/contactanos">Contáctenos</Link>
             </li>
 
           </ul>
