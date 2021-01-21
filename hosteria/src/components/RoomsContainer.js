@@ -3,7 +3,7 @@ import { withRoomConsumer } from "../context";
 import Loading from "./Loading";
 import RoomsFilter from "./RoomsFilter";
 import RoomsList from "./RoomsList";
-
+import "../Css/Rooms.css";
 function RoomContainer({ context }) {
   const { loading, sortedRooms, rooms } = context;
   if (loading) {

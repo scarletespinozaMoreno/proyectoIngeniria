@@ -8,18 +8,20 @@ import FeaturedRooms from "../components/FeaturedRooms";
 const home = () => {
   return (
     <>
-      <Hero>
-        <Banner
-          title="Suites Familiares"
-          subtitle="Suite para 5 personas a $200"
-        >
-          <Link to="/rooms" className="btn-primary">
-            Ver habitaciones
-          </Link>
-        </Banner>
-      </Hero>
-      <Services />
-      <FeaturedRooms />
+
+          <Hero>
+            <Banner
+              title="Suites Familiares"
+              subtitle="Suite para 5 personas a $200"
+            >
+              <Link to="/rooms" className="btn-primary">
+                Ver habitaciones
+              </Link>
+            </Banner>
+          </Hero>
+          <Services />
+          <FeaturedRooms />
+          
       
      
     </>

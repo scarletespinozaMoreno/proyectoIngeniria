@@ -1,5 +1,6 @@
 import React from "react";
 import Room from "./Room";
+import "../Css/Rooms.css";
 const RoomsList = ({ rooms }) => {
   if (rooms.length === 0) {
     return (
